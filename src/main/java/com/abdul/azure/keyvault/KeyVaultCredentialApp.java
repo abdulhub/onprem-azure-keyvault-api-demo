@@ -9,12 +9,12 @@ public class KeyVaultCredentialApp {
 		// TODO Auto-generated method stub
 		    String clientId = "";
 		    String clientKey = "";
-		    String KEYVAULT_URL = "";
+		    String KEY_VAULT_URL = "";
 		 
 		KeyVaultClient client = new KeyVaultClient(
 		        new AzureKeyVaultCredService(clientId, clientKey));
  
-		SecretBundle secret = client.getSecret( KEYVAULT_URL, "spring-db-password" );
+		SecretBundle secret = client.getSecret( KEY_VAULT_URL, "spring-db-password" );
 		System.out.println( "Secret Value: " + secret.value() );
 
 	}
