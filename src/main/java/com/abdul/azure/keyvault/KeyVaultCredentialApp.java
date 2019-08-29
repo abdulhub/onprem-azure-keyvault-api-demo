@@ -7,9 +7,9 @@ public class KeyVaultCredentialApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		    String clientId = "f0141583-9f23-4672-a63d-af6c6710a512";
-		    String clientKey = "tRBNqYOFLqmm0@ZhOL]K2LeIv8XL@I.1";
-		    String KEYVAULT_URL = "https://credstore.vault.azure.net/";
+		    String clientId = "";
+		    String clientKey = "";
+		    String KEYVAULT_URL = "";
 		 
 		KeyVaultClient client = new KeyVaultClient(
 		        new AzureKeyVaultCredService(clientId, clientKey));
